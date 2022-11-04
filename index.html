@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <header>
+        <a href="#"><img src="imagens/logo.png" class="logo"> </a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </header>
+    <section class="content">
+            <div class="textBox">
+                <div>
+                    <h2>Doritos bom<br><span>Da Poh@</span></h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Nihil culpa at maxime consectetur nobis? Nam, assumenda!
+                        Mollitia dolor esse provident nihil dicta molestiae quasi,
+                        ab, impedit culpa, iure totam consectetur.
+                    </p>
+                    <a href="#">Ver Todos os Produtos</a>
+                </div>
+                <div class="imgBox">
+                    <img src="imagens/vermelho.png" class="vermelho">
+                </div>
+            </div>
+    </section>
+    <div class="thumb">
+        <ul >
+            <li><img src="imagens/preto.png" onclick="imSlider('preto.png');changeBgColor('#1e1e1e')"></li>
+            <li><img src="imagens/branco.png" onclick="imSlider('branco.png');changeBgColor('#dfd7d7')"></li>
+            <li><img src="imagens/vermelho.png" onclick="imSlider('vermelho.png');changeBgColor('#861e1e')"></li>
+        </ul>
+
+    </div>
+    <footer>
+        <ul class="sci">
+            <li><a href="#"><img src="imagens/face.png"></a></li>
+            <li><a href="#"><img src="imagens/insta.png"></a></li>
+        </ul>
+    </footer>
+    <script type="text/javascript">
+        function imSlider(anything) {
+            document.querySelector('.vermelho').src = anything;
+        }
+        function changeBgColor(color) {
+            const section = document.querySelector('body');
+            section.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
