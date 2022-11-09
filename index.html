@@ -19,9 +19,8 @@
             <li><a href="#">Contato</a></li>
         </ul>
     </header>
-    <section class="content">
-            <div class="textBox">
-                <div>
+            <section class="textBox">
+                <div class="botao">
                     <h2>Doritos bom<br><span>Da Poh@</span></h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Nihil culpa at maxime consectetur nobis? Nam, assumenda!
@@ -30,25 +29,19 @@
                     </p>
                     <a href="#">Ver Todos os Produtos</a>
                 </div>
+                <div class="thumb">
+                    <ul >
+                        <li><img src="./imagens/preto.png" onclick="imSlider('./imagens/preto.png');changeBgColor('#1e1e1e')"></li>
+                        <li><img src="./imagens/branco.png" onclick="imSlider('./imagens/branco.png');changeBgColor('#dfd7d7')"></li>
+                        <li><img src="./imagens/vermelho.png" onclick="imSlider('./imagens/vermelho.png');changeBgColor('#861e1e')"></li>
+                    </ul>
+                </div>
                 <div class="imgBox">
+                    
                     <img src="./imagens/vermelho.png" class="vermelho">
                 </div>
-            </div>
-    </section>
-    <div class="thumb">
-        <ul >
-            <li><img src="./imagens/preto.png" onclick="imSlider('./imagens/preto.png');changeBgColor('#1e1e1e')"></li>
-            <li><img src="./imagens/branco.png" onclick="imSlider('./imagens/branco.png');changeBgColor('#dfd7d7')"></li>
-            <li><img src="./imagens/vermelho.png" onclick="imSlider('./imagens/vermelho.png');changeBgColor('#861e1e')"></li>
-        </ul>
-
-    </div>
-    <footer>
-        <ul class="sci">
-            <li><a href="#"><img src="./imagens/face.png"></a></li>
-            <li><a href="#"><img src="./imagens/insta.png"></a></li>
-        </ul>
-    </footer>
+            </section>
+    
     <script type="text/javascript">
         function imSlider(anything) {
             document.querySelector('.vermelho').src = anything;

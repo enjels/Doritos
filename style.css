@@ -7,10 +7,15 @@
   list-style: none;
   text-decoration: none;
 }
+:root{
+  font-size: 62,5%;
+
+}
+
 body {
-  padding: 10px;
+  height: 100%;
   transition: 0.5s;
-  background: #861e1e;
+  background: #861e1e
 }
 header {
   display: flex;
@@ -26,68 +31,58 @@ header ul {
   gap: 40px;
   /* padding-right: 50px; */
 }
-.content {
-    margin: 10px 80px;
-}
-div:first-child {
+
+div:first-child{
   width: 700px;
+  padding: 4.0rem;
 }
-.content .textBox h2 {
+
+.textBox h2 {
   color: #fff;
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 900;
   text-transform: uppercase;
 }
-.content .textBox p,
+.textBox p,
 header ul li a {
   color: #fff;
+  font-size: 1.2rem;
 }
 
-.content .textBox a {
+.textBox a {
   display: inline-block;
-  margin-top: 20px;
-  padding: 8px 20px;
+
+  padding: 0.8rem 2.0rem;
   background: #fff;
   color: #111;
-  border-radius: 40px;
+  border-radius: 4rem;
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
+  margin-top: 2.0rem;
 }
-div:first-child{
-    width: 700px;
-    margin: auto;
-}
-.content .textBox {
-  width: 100%;
+
+.textBox {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .imgBox img{
-    max-width:400px ;
+    max-width:500px ;
 }
 .thumb ul{
     justify-content: center;
-    gap: 40px;
+    gap: 4.0rem;
 }
 
-.thumb ul,
-.sci {
+.thumb ul{
   display: flex;
-  
+
 }
-.thumb ul li img,
-.sci li img {
+
+.thumb ul li img{
   max-width: 100px;
 }
-.sci{
-margin: auto;
-}
-
-.sci li img {
-    max-width:40px;
-  }
   footer{
     display: flex;
     align-items: flex-end;
